@@ -158,7 +158,7 @@ open class Attachment: NSTextAttachment, BoundsObserving {
         invalidateLayout()
     }
 
-    var contentView: UIView? {
+    public var contentView: UIView? {
         get { view?.subviews.first }
         set {
             view?.subviews.forEach { $0.removeFromSuperview() }
